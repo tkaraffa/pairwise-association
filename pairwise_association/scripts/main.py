@@ -15,12 +15,12 @@ Options:
 
 import argparse
 
-from pairwise_associator import PairwiseAssociator
+from pairwise_association.pairwise_associator import PairwiseAssociator
 
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        description="""find pairwise association rules"""
+        description="""Find pairwise association rules."""
     )
 
     parser.add_argument(
@@ -29,14 +29,14 @@ def parse_arguments():
     )
     parser.add_argument(
         "--threshold",
-        help="The value with which to filter pairwise probabilities",
+        help="The value with which to filter pairwise probabilities (default=0.75).",
         required=False,
         default=0.75,
         type=float,
     )
     parser.add_argument(
         "--ignore",
-        help="Column to ignore and NOT calculate confidence rules for.",
+        help="Column(s) to ignore and NOT calculate confidence rules for.",
         required=False,
         action="append",
         default=list(),

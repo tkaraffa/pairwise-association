@@ -15,3 +15,19 @@ or
 
 If this criteria is met, it can be reasonably said that 
 ![\Large A\implies B](https://latex.codecogs.com/svg.latex?&space;A\implies&space;B) or `A implies B`
+
+## Usage
+
+```
+usage: main.py [-h] [--threshold THRESHOLD] [--ignore IGNORE] file
+
+Find pairwise association rules.
+
+positional arguments:
+  file                  The file with which to calculate pairwise associations
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --threshold THRESHOLD The value with which to filter pairwise probabilities (default=0.75).
+  --ignore IGNORE       Column(s) to ignore and NOT calculate confidence rules for.
+```

@@ -4,7 +4,7 @@ from collections import Counter
 from pandas import read_csv, DataFrame
 
 from util.multithread import multithread
-from pairwise_associator_enums import ConfThreshold
+from pairwise_association.pairwise_associator_enums import ConfThreshold
 
 
 class PairwiseAssociator:
